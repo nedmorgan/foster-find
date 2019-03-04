@@ -12,7 +12,7 @@ const fultonShelter = new Shelter({
     zipCode: '30318'
   },
   phoneNumber: '404-613-0358',
-  animals:
+  animals: [betsy, gizmo]
 })
 
 const atlantaHumane = new Shelter({
@@ -24,8 +24,7 @@ const atlantaHumane = new Shelter({
     zipCode: '30318'
   },
   phoneNumber: '404-875-5331',
-  animals:
-
+  animals: [walter, karen]
 })
 
 const betsy = new Foster({
@@ -35,8 +34,8 @@ const betsy = new Foster({
   age: '2 years old',
   size: 'Medium',
   adoptionFee: '$100',
-  petImg: String,
-  shelter:
+  petImg: 'https://www.flickr.com/photos/166184353@N02/33406027648/in/album-72157676977521607/',
+  shelter: [fultonShelter]
 })
 
 const walter = new Foster({
@@ -46,8 +45,8 @@ const walter = new Foster({
   age: '8 years old',
   size: 'Medium',
   adoptionFee: '$1000',
-  petImg: String,
-  shelter:
+  petImg: 'https://www.flickr.com/photos/166184353@N02/40317151623/in/album-72157676977521607/',
+  shelter: [atlantaHumane]
 })
 
 const gizmo = new Foster({
@@ -57,8 +56,8 @@ const gizmo = new Foster({
   age: '4 years old',
   size: 'Medium',
   adoptionFee: '$100',
-  petImg: String,
-  shelter:
+  petImg: 'https://www.flickr.com/photos/166184353@N02/32339891007/in/album-72157676977521607/',
+  shelter: [fultonShelter]
 })
 
 const karen = new Foster({
@@ -68,6 +67,6 @@ const karen = new Foster({
   age: '3 years old',
   size: 'Medium',
   adoptionFee: '$125',
-  petImg: String,
-  shelter:
+  petImg: 'https://www.flickr.com/photos/166184353@N02/47281662991/in/album-72157676977521607/',
+  shelter: [atlantaHumane]
 })
