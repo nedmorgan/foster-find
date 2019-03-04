@@ -2,7 +2,10 @@ const User = require('../models/User')
 
 const userController = {
   index: (req, res) => {
-    res.send(`Index page of app`)
+    res.send(`User page`)
+  },
+  new: (req, res) => {
+    res.send(`Form to create a new user`)
   },
   create: (req, res) => {
     res.send(`Create new instance in the database`)

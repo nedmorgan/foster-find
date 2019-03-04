@@ -1,17 +1,23 @@
 const express = require('express')
 const router = express.Router()
+const appController = require('../controllers/appController')
 const userController = require('../controllers/userController')
 const fosterController = require('../controllers/fosterController')
 const shelterController = require('../controllers/shelterController')
 
+// Application routes
+router.get('/', appController.index)
+
 // User routes
-router.get('/', userController.index)
+router.get('/users', userController.index)
 
-router.post('/', userController.create)
+router.get('/users/new', userController.new)
 
-router.get('/:userId', userController.show)
+router.post('/users', userController.create)
 
-router.delete('/:userId', userController.delete)
+router.get('/users/:userId', userController.show)
+
+router.delete('/users/:userId', userController.delete)
 
 // Foster routes
 router.get('/fosters', fosterController.index)
