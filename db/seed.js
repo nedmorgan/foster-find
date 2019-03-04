@@ -3,6 +3,31 @@ const User = require("../models/User.js")
 const Foster = require("../models/Foster.js")
 const Shelter = require("../models/Shelter.js")
 
+const ned = new User({
+  name: 'Ned',
+  localShelter: 'Fulton County Animal Services',
+})
+
+const gizmo = new Foster({
+  name: 'Gizmo',
+  breed: 'Calico',
+  gender: 'Female',
+  age: '4 years old',
+  size: 'Medium',
+  adoptionFee: '$100',
+  petImg: 'https://www.flickr.com/photos/166184353@N02/32339891007/in/album-72157676977521607/',
+})
+
+const betsy = new Foster({
+  name: 'Betsy',
+  breed: 'Pitbull mix',
+  gender: 'Female',
+  age: '2 years old',
+  size: 'Medium',
+  adoptionFee: '$100',
+  petImg: 'https://www.flickr.com/photos/166184353@N02/33406027648/in/album-72157676977521607/',
+})
+
 const fultonShelter = new Shelter({
   name: 'Fulton County Animal Services',
   address: {
@@ -13,6 +38,26 @@ const fultonShelter = new Shelter({
   },
   phoneNumber: '404-613-0358',
   animals: [betsy, gizmo]
+})
+
+const walter = new Foster({
+  name: 'Walter',
+  breed: 'Jack Russel Mix',
+  gender: 'Male',
+  age: '8 years old',
+  size: 'Medium',
+  adoptionFee: '$1000',
+  petImg: 'https://www.flickr.com/photos/166184353@N02/40317151623/in/album-72157676977521607/',
+})
+
+const karen = new Foster({
+  name: 'Karen',
+  breed: 'Tabby',
+  gender: 'Female',
+  age: '3 years old',
+  size: 'Medium',
+  adoptionFee: '$125',
+  petImg: 'https://www.flickr.com/photos/166184353@N02/47281662991/in/album-72157676977521607/',
 })
 
 const atlantaHumane = new Shelter({
@@ -27,46 +72,18 @@ const atlantaHumane = new Shelter({
   animals: [walter, karen]
 })
 
-const betsy = new Foster({
-  name: 'Betsy',
-  breed: 'Pitbull mix',
-  gender: 'Female',
-  age: '2 years old',
-  size: 'Medium',
-  adoptionFee: '$100',
-  petImg: 'https://www.flickr.com/photos/166184353@N02/33406027648/in/album-72157676977521607/',
-  shelter: [fultonShelter]
-})
+Shelter.remove({})
+  .then(() => Shelter.create([atlantaHumane, fultonShelter]))
+  .then(() => {
+    console.log("seeded successfully");
+    mongoose.connection.close();
+  })
+  .catch(err => console.log(err, "error!"));
 
-const walter = new Foster({
-  name: 'Walter',
-  breed: 'Jack Russel Mix',
-  gender: 'Male',
-  age: '8 years old',
-  size: 'Medium',
-  adoptionFee: '$1000',
-  petImg: 'https://www.flickr.com/photos/166184353@N02/40317151623/in/album-72157676977521607/',
-  shelter: [atlantaHumane]
-})
-
-const gizmo = new Foster({
-  name: 'Gizmo',
-  breed: 'Calico',
-  gender: 'Female',
-  age: '4 years old',
-  size: 'Medium',
-  adoptionFee: '$100',
-  petImg: 'https://www.flickr.com/photos/166184353@N02/32339891007/in/album-72157676977521607/',
-  shelter: [fultonShelter]
-})
-
-const karen = new Foster({
-  name: 'Karen',
-  breed: 'Tabby',
-  gender: 'Female',
-  age: '3 years old',
-  size: 'Medium',
-  adoptionFee: '$125',
-  petImg: 'https://www.flickr.com/photos/166184353@N02/47281662991/in/album-72157676977521607/',
-  shelter: [atlantaHumane]
-})
+User.remove({})
+  .then(() => User.create([ned]))
+  .then(() => {
+    console.log("seeded successfully");
+    mongoose.connection.close();
+  })
+  .catch(err => console.log(err, "error!"));

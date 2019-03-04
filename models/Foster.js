@@ -9,12 +9,6 @@ const Foster = new Schema({
   size: String,
   adoptionFee: String,
   petImg: String,
-  shelter: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Shelter'
-  }]
 })
 
-const Foster = mongoose.model('Foster', Foster);
-
-module.exports = Foster;
+module.exports = mongoose.model("Foster", Foster);
