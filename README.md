@@ -59,3 +59,7 @@ ___
 * In Version 2 of this application I would like to soft-delete the animals and show them on a separate page that displays adoptions.
 
 * I would like to have the user to add an animal to their favorite and have that animal display on their user page.
+
+## Credits
+
+A big thank you to [Brad Traversy](https://github.com/bradtraversy/node_passport_login), who was able to provide me with the necessary steps to use passport and have a user log-in properly. 
