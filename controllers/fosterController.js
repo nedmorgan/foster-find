@@ -23,3 +23,5 @@ const fosterController = {
     res.send(`Removed a foster`)
   },
 }
+
+module.exports = fosterController

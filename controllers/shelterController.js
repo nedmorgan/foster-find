@@ -17,3 +17,5 @@ const shelterController = {
     res.send(`Delete an individual shelter in the DB`)
   }
 }
+
+module.exports = shelterController

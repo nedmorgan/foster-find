@@ -1,27 +1,15 @@
 const express = require('express')
 const router = express.Router()
-const {
-  ensureAuthenticated
-} = require('../config/auth')
-const appController = require('../controllers/appController')
 const userController = require('../controllers/userController')
 const fosterController = require('../controllers/fosterController')
 const shelterController = require('../controllers/shelterController')
 
-// Welcome Page
-router.get('/', appController.index);
-router.get('/dashboard', ensureAuthenticated, appController.dashboard)
-
 // User routes
-router.get('/login', userController.index)
+router.get('/', userController.index)
 
-router.post('/login', userController.login)
+router.post('/', userController.create)
 
-router.get('/register', userController.new)
-
-router.post('/register', userController.register)
-
-router.get('/logout', userController.logout)
+router.get('/:userId', userController.show)
 
 router.delete('/:userId', userController.delete)
 
