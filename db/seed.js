@@ -15,7 +15,7 @@ const gizmo = new Foster({
   age: '4 years old',
   size: 'Medium',
   adoptionFee: '$100',
-  petImg: 'https://www.flickr.com/photos/166184353@N02/32339891007/in/album-72157676977521607/',
+  petImg: 'https://farm8.staticflickr.com/7891/32339891007_018bba6fc0_b.jpg',
 })
 
 const betsy = new Foster({
@@ -25,7 +25,7 @@ const betsy = new Foster({
   age: '2 years old',
   size: 'Medium',
   adoptionFee: '$100',
-  petImg: 'https://www.flickr.com/photos/166184353@N02/33406027648/in/album-72157676977521607/',
+  petImg: 'https://farm8.staticflickr.com/7889/33406027648_dba404c408_b.jpg',
 })
 
 const fultonShelter = new Shelter({
@@ -47,7 +47,7 @@ const walter = new Foster({
   age: '8 years old',
   size: 'Medium',
   adoptionFee: '$1000',
-  petImg: 'https://www.flickr.com/photos/166184353@N02/40317151623/in/album-72157676977521607/',
+  petImg: 'https://farm8.staticflickr.com/7817/40317151623_740250fe06_b.jpg',
 })
 
 const karen = new Foster({
@@ -57,7 +57,7 @@ const karen = new Foster({
   age: '3 years old',
   size: 'Medium',
   adoptionFee: '$125',
-  petImg: 'https://www.flickr.com/photos/166184353@N02/47281662991/in/album-72157676977521607/',
+  petImg: 'https://farm8.staticflickr.com/7880/47281662991_5b02ef185a_b.jpg',
 })
 
 const atlantaHumane = new Shelter({

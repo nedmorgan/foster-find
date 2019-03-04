@@ -62,4 +62,4 @@ ___
 
 ## Credits
 
-A big thank you to [Brad Traversy](https://github.com/bradtraversy/node_passport_login), who was able to provide me with the necessary steps to use passport and have a user log-in properly. 
+Background image photo by Josh Sorenson on Unsplash.

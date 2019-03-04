@@ -1,0 +1,10 @@
+.parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://farm8.staticflickr.com/7924/32340897707_0ae38fc717_b.jpg');
+  height: 500px;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
