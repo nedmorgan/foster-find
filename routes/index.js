@@ -26,20 +26,30 @@ router.get('/logout', userController.logout)
 router.delete('/:userId', userController.delete)
 
 // Foster routes
-router.get('/users/:userID/chirps', fosterController.index)
+router.get('/fosters', fosterController.index)
 
-router.get('/users/:userId/chirps/new', fosterController.new)
+router.get('/fosters/new', fosterController.new)
 
-router.post('/users/:userId/chirps', fosterController.create)
+router.post('/fosters', fosterController.create)
 
-router.get('/users/:userId/chirps/:chirpId', fosterController.show)
+router.get('/fosters/:fosterId', fosterController.show)
 
-router.get('/users/:userId/chirps/:chirpId/edit', fosterController.edit)
+router.get('/fosters/:fosterId/edit', fosterController.edit)
 
-router.put('/users/:userId/chirps/:chirpId', fosterController.update)
+router.put('/fosters/:fosterId', fosterController.update)
 
-router.delete('/users/:userId/chirps/:chirpId', fosterController.delete)
+router.delete('/fosters/:fosterId', fosterController.delete)
 
 // Shelter routes
+
+router.get('/shelters', shelterController.index)
+
+router.get('/shelters/new', shelterController.new)
+
+router.post('/shelters', shelterController.create)
+
+router.get('/shelters/:shelterId', shelterController.show)
+
+router.delete('/shelters/:shelterId', shelterController.delete)
 
 module.exports = router

@@ -8,6 +8,7 @@ const Foster = new Schema({
   age: String,
   size: String,
   adoptionFee: String,
+  petImg: String,
   shelter: [{
     type: Schema.Types.ObjectId,
     ref: 'Shelter'

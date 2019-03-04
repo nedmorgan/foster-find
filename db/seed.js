@@ -35,6 +35,7 @@ const betsy = new Foster({
   age: '2 years old',
   size: 'Medium',
   adoptionFee: '$100',
+  petImg: String,
   shelter:
 })
 
@@ -45,6 +46,7 @@ const walter = new Foster({
   age: '8 years old',
   size: 'Medium',
   adoptionFee: '$1000',
+  petImg: String,
   shelter:
 })
 
@@ -55,6 +57,7 @@ const gizmo = new Foster({
   age: '4 years old',
   size: 'Medium',
   adoptionFee: '$100',
+  petImg: String,
   shelter:
 })
 
@@ -65,5 +68,6 @@ const karen = new Foster({
   age: '3 years old',
   size: 'Medium',
   adoptionFee: '$125',
+  petImg: String,
   shelter:
 })
