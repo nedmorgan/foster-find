@@ -8,13 +8,22 @@ const userController = {
     res.render('users/new')
   },
   create: (req, res) => {
-    res.send(`Create new instance in the database`)
+    User.create(req.body).then(user => {
+      res.redirect(`/users/${user._id}`)
+    })
   },
   show: (req, res) => {
-    res.render('users/show')
+    User.findById(req.params.userId).then(user => {
+      res.render(`/users/${user._id}`, {
+        user
+      })
+    })
   },
   delete: (req, res) => {
-    res.send(`Deleted user`)
+    User.findByIdAndDelete(req.params.shopId).then(() => {
+      console.log(`Deleted user with id of ${req.params.userId}`)
+      res.redirect('/')
+    })
   },
 }
 

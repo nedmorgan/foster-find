@@ -14,7 +14,10 @@ const shelterController = {
     res.render('shelters/show')
   },
   delete: (req, res) => {
-    res.send(`Delete an individual shelter in the DB`)
+    Shelter.findByIdAndDelete(req.params.shelterId).then(() => {
+      console.log(`Deleted shelter with id of ${req.params.shelterId}`)
+      res.redirect('/shelters')
+    })
   }
 }
 
