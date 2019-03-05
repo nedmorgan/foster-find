@@ -1,12 +1,13 @@
-<div class="card card-center" style="width: 25vw">
+<div class="card card-center" style="width: 30vw">
   <div class="card-body">
     <h5 class="card-title">{{shelter.name}}</h5>
-    <p class="card-text">{{shelter.address.street}}</p>
-    <p class="card-text">{{shelter.address.city}}</p>
-    <p class="card-text">{{shelter.address.state}}</p>
-    <p class="card-text">{{shelter.address.zipCode}}</p>
+    <p class="card-text">Street: {{shelter.address.street}}</p>
+    <p class="card-text">City: {{shelter.address.city}}</p>
+    <p class="card-text">State: {{shelter.address.state}}</p>
+    <p class="card-text">Zip: {{shelter.address.zipCode}}</p>
+    <p class="text-left">Phone Number: {{shelter.phoneNumber}}</p>
     <ul>
-      {{#each animals}}
+      {{#each shelter.animals}}
       <a href="/{{../fosters}}/{{foster._id}}">
         {{name}}
       </a>
