@@ -11,7 +11,7 @@ const userController = {
     res.send(`Create new instance in the database`)
   },
   show: (req, res) => {
-    res.send(`Show user profile page`)
+    res.render('users/show')
   },
   delete: (req, res) => {
     res.send(`Deleted user`)
