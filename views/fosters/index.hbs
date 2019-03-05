@@ -1,18 +1,20 @@
-<div class="card-deck">
-  {{#each fosters}}
-  <div class="card">
-    <img src="{{petImg}}" class="card-img-top" alt="foster animal">
-    <div class="card-body">
-      <h5 class="card-title">{{name}}</h5>
-      <p class="card-text">Breed: {{breed}}</p>
-      <p class="card-text">Gender: {{gender}}</p>
-      <p class="card-text">Age: {{age}}</p>
-      <p class="card-text">Size: {{size}}</p>
-      <p class="card-text">Adoption Fee: {{adoptionFee}}</p>
-    </div>
-    <div class="card-footer">
-      <a class="badge badge-light" href="/fosters/:fosterId">Click to learn more!</a>
+{{#each fosters}}
+<div class="container">
+  <div class="row foster-card">
+    <div class="card col-lg-6" style="width: 20vw">
+      <img src="{{petImg}}" class="card-img-top" alt="foster animal">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">Breed: {{breed}}</p>
+        <p class="card-text">Gender: {{gender}}</p>
+        <p class="card-text">Age: {{age}}</p>
+        <p class="card-text">Size: {{size}}</p>
+        <p class="card-text">Adoption Fee: {{adoptionFee}}</p>
+      </div>
+      <div class="card-footer button-center">
+        <a class="btn btn-primary" href='fosters/{{id}}'>Click to learn more!</a> </div>
     </div>
   </div>
-  {{/each}}
+
 </div>
+{{/each}}

@@ -2,21 +2,32 @@ const Shelter = require('../models/Shelter')
 
 const shelterController = {
   index: (req, res) => {
-    res.render('shelters/index')
+    Shelter.find()
+      .then(shelters => {
+        res.render('shelters/index', {
+          shelters
+        })
+      })
   },
   new: (req, res) => {
     res.render('shelters/new')
   },
   create: (req, res) => {
-    res.send(`Creating a new shelter in the DB`)
+    Shelter.create(req.body).then(shelter => {
+      res.redirect('shelters/index')
+    })
   },
   show: (req, res) => {
-    res.render('shelters/show')
+    Shelter.findById(req.params.shelterId).then(shelter => {
+      res.render('shelters/show', {
+        shelter
+      })
+    })
   },
   delete: (req, res) => {
     Shelter.findByIdAndDelete(req.params.shelterId).then(() => {
       console.log(`Deleted shelter with id of ${req.params.shelterId}`)
-      res.redirect('/shelters')
+      res.redirect('shelters/index')
     })
   }
 }

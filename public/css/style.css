@@ -54,3 +54,17 @@ a {
   width: 30vw;
   margin-top: 2vw;
 }
+
+.foster-card {
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+.button-center {
+  margin: 0 auto;
+}
+
+.shelters {
+  font-family: 'Lato', sans-serif;
+  color: whitesmoke;
+}

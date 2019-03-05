@@ -26,18 +26,22 @@ const fosterController = {
   },
   edit: (req, res) => {
     Foster.findById(req.params.fosterId).then(foster => {
-      res.render('fosters/:fosterId/edit', {
+      res.render('fosters/edit', {
         foster
       })
     })
   },
   update: (req, res) => {
-    res.send(`Sending the updated info to the database`)
+    Shop.findByIdAndUpdate(req.params.fosterId, req.body, {
+      new: true
+    }).then(() => {
+      res.redirect(`/${req.params.fosterId}`)
+    })
   },
   delete: (req, res) => {
     Foster.findByIdAndDelete(req.params.fosterId).then(() => {
       console.log(`Deleted foster with id of ${req.params.fosterId}`)
-      res.redirect('/fosters')
+      res.redirect('fosters/index')
     })
   },
 }
