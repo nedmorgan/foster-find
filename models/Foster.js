@@ -9,6 +9,7 @@ const Foster = new Schema({
   size: String,
   adoptionFee: String,
   petImg: String,
+  description: String,
 })
 
 module.exports = mongoose.model("Foster", Foster);

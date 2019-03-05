@@ -2,7 +2,7 @@ const Foster = require('../models/Foster')
 
 const fosterController = {
   index: (req, res) => {
-    res.send(`Show all the foster animals`)
+    res.render('/fosters')
   },
   new: (req, res) => {
     res.send(`Form to create new foster`)
