@@ -8,13 +8,14 @@ const userController = {
     res.render('users/new')
   },
   create: (req, res) => {
+    console.log(req.body)
     User.create(req.body).then(user => {
       res.redirect(`/users/${user._id}`)
     })
   },
   show: (req, res) => {
     User.findById(req.params.userId).then(user => {
-      res.render(`/users/${user._id}`, {
+      res.render('users/show', {
         user
       })
     })

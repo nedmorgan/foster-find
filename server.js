@@ -5,8 +5,8 @@ const logger = require('morgan')
 const methodOverride = require('method-override')
 const routes = require('./routes/index.js')
 
-
 app.set('view engine', 'hbs')
+
 //Register middleware
 app.use(express.json())
 
