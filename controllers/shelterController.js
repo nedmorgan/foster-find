@@ -5,7 +5,7 @@ const shelterController = {
     res.render('shelters/index')
   },
   new: (req, res) => {
-    res.send(`Form to create a new shelter`)
+    res.render('shelters/new')
   },
   create: (req, res) => {
     res.send(`Creating a new shelter in the DB`)
