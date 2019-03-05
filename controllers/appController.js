@@ -1,6 +1,6 @@
 const appController = {
   index: (req, res) => {
-    res.render('user/index')
+    res.render('users/index')
   }
 }
 

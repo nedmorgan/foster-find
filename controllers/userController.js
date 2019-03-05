@@ -5,7 +5,7 @@ const userController = {
     res.send(`User page`)
   },
   new: (req, res) => {
-    res.send(`Form to create a new user`)
+    res.render('users/new')
   },
   create: (req, res) => {
     res.send(`Create new instance in the database`)

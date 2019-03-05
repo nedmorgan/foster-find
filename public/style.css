@@ -1,4 +1,4 @@
-.parallax {
+body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('https://farm8.staticflickr.com/7924/32340897707_0ae38fc717_b.jpg');
   height: 600px;
@@ -7,6 +7,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.input-mysize {
+  width: 20vw;
 }
 
 .main {
@@ -18,4 +22,9 @@
 
 .main-icon {
   margin-left: 2vw
+}
+
+.input-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 3vw;
 }
