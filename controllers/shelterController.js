@@ -2,7 +2,7 @@ const Shelter = require('../models/Shelter')
 
 const shelterController = {
   index: (req, res) => {
-    res.send(`Show all of the shelters`)
+    res.render('shelters/index')
   },
   new: (req, res) => {
     res.send(`Form to create a new shelter`)
