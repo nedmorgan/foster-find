@@ -11,7 +11,7 @@ const shelterController = {
     res.send(`Creating a new shelter in the DB`)
   },
   show: (req, res) => {
-    res.send(`Show an individual shetler`)
+    res.render('shelters/show')
   },
   delete: (req, res) => {
     res.send(`Delete an individual shelter in the DB`)
