@@ -17,11 +17,11 @@ body {
   color: whitesmoke;
   font-size: 5vw;
   font-family: 'Lato', sans-serif;
-  margin-top: 2vw;
+  margin-top: 5vw;
 }
 
 .main-icon {
-  margin-left: 2vw
+  margin-left: .5vw
 }
 
 .input-text {
