@@ -1,0 +1,22 @@
+<div class="card card-center" style="width: 50vw">
+  <img src="{{foster.petImg}}" class="card-img-top" alt="foster pet">
+  <div class="card-body">
+    <h5 class="card-title">{{foster.name}}</h5>
+    <p class="card-text">Breed: {{foster.breed}}</p>
+    <p class="card-text">Gender: {{foster.gender}}</p>
+    <p class="card-text">Age: {{foster.age}}</p>
+    <p class="card-text">Size: {{foster.size}}</p>
+    <p class="card-text">Adoption Fee: {{foster.adoptionFee}}</p>
+    <p class="card-text">Description: {{foster.description}}</p>
+  </div>
+</div>
+<div class="panel-footer row text-center justify-content-center">
+  <div class="col-xs-6 text-left">
+    <a class="action-btn btn btn-info btn-lg button" href="/{{foster.id}}/edit">EDIT</a>
+  </div>
+  <div class="col-xs-6 text-right" style="margin-left: 2vw">
+    <form class="delete-form" action="/{{foster.id}}?_method=DELETE" method="POST">
+      <input class="action-btn btn btn-danger btn-lg button" type="submit" value="DELETE">
+    </form>
+  </div>
+</div>

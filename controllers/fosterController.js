@@ -11,7 +11,7 @@ const fosterController = {
     res.send(`Sending new foster to the DB`)
   },
   show: (req, res) => {
-    res.send(`Showing an individual foster`)
+    res.render('fosters/show')
   },
   edit: (req, res) => {
     res.render('fosters/:fosterId/edit')

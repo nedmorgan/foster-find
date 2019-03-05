@@ -33,3 +33,20 @@ label,
 h2 {
   color: whitesmoke;
 }
+
+h5,
+p,
+a {
+  font-family: 'Lato', sans-serif;
+}
+
+.card-center {
+  margin: 0 auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.button {
+  width: 30vw;
+  margin-top: 2vw;
+}
