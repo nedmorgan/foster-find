@@ -1,43 +1,39 @@
 <div class="container">
   <a href="/fosters">Back</a>
-  <h2 class="text-center">Add a Foster</h2>
+  <h2 class="text-center">Edit a Foster</h2>
   <div class="col-8">
     <form action="/fosters" method="POST">
       <div class="form-group">
         <label class="input-text" for="name">Name</label>
-        <input class="form-control" type="text" name="name" id="name" placeholder="Please enter your foster's name">
+        <input class="form-control" type="text" name="name" id="name" value="{{foster.name}}">
       </div>
       <div class="form-group">
         <label class="input-text" for="breed">Breed</label>
-        <input class="form-control" type="text" name="breed" id="breed" placeholder="Please enter your foster's breed">
+        <input class="form-control" type="text" name="breed" id="breed" value="{{foster.breed}}">
       </div>
       <div class="form-group">
         <label class="input-text" for="gender">Gender</label>
-        <input class="form-control" type="text" name="gender" id="gender"
-          placeholder="Please enter your foster's gender">
+        <input class="form-control" type="text" name="gender" id="gender" value="{{foster.gender}}">
       </div>
       <div class="form-group">
         <label class="input-text" for="age">Age</label>
-        <input class="form-control" type="text" name="age" id="age" placeholder="Please enter your foster's age">
+        <input class="form-control" type="text" name="age" id="age" value="{{foster.gender}}">
       </div>
       <div class="form-group">
         <label class="input-text" for="size">Size</label>
-        <input class="form-control" type="text" name="size" id="size" placeholder="Please enter your foster's size">
+        <input class="form-control" type="text" name="size" id="size" value="{{foster.gender}}">
       </div>
       <div class="form-group">
         <label class="input-text" for="adoptionFee">Adoption Fee</label>
-        <input class="form-control" type="text" name="adoptionFee" id="adoptionFee"
-          placeholder="Please enter your foster's adoption fee">
+        <input class="form-control" type="text" name="adoptionFee" id="adoptionFee" value="{{foster.adoptionFee}}">
       </div>
       <div class="form-group">
         <label class="input-text" for="petImg">Foster Image</label>
-        <input class="form-control" type="text" name="petImg" id="petImg"
-          placeholder="Please provide a link to an image of your foster">
+        <input class="form-control" type="text" name="petImg" id="petImg" value="{{foster.petImg}}">
       </div>
       <div class="form-group">
         <label class="input-text" for="description">Description</label>
-        <input class="form-control" type="text" name="description" id="description"
-          placeholder="Please provide a description of your foster">
+        <input class="form-control" type="text" name="description" id="description" value="{{foster.description}}">
       </div>
       <input class="btn btn-info" type="submit" value="SUBMIT">
       <div class="box"></div>

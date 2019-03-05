@@ -14,7 +14,7 @@ const fosterController = {
     res.send(`Showing an individual foster`)
   },
   edit: (req, res) => {
-    res.send(`Edit form to update the foster animal`)
+    res.render('fosters/:fosterId/edit')
   },
   update: (req, res) => {
     res.send(`Sending the updated info to the database`)
