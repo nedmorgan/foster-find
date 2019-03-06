@@ -1,4 +1,5 @@
 const Shelter = require('../models/Shelter')
+const Foster = require('../models/Foster')
 
 const shelterController = {
   index: (req, res) => {
@@ -10,7 +11,11 @@ const shelterController = {
       })
   },
   new: (req, res) => {
-    res.render('shelters/new')
+    Foster.find().then(fosters => {
+      res.render('shelters/new', {
+        fosters
+      })
+    })
   },
   create: (req, res) => {
     Shelter.create(req.body).then(shelter => {

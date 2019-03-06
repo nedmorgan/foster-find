@@ -82,6 +82,15 @@
         <label class="input-text" for="phoneNumber">Phone Number</label>
         <input class="form-control" type="text" name="phoneNumber" id="phoneNumber" placeholder="(___) ___ - ____">
       </div>
+      <div class="form-group">
+        <label class="input-text" for="animals">New Animal</label>
+        <select class="custom-select" type="text" name="animals" id="animals">
+          <option selected>Open this select menu</option>
+          {{#each fosters}}
+          <option value="{{id}}">{{name}}</option>
+          {{/each}}
+        </select>
+      </div>
       <input class="btn btn-info" type="submit" value="SUBMIT">
       <div class="box"></div>
     </form>
