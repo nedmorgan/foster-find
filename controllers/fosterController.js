@@ -14,7 +14,7 @@ const fosterController = {
   },
   create: (req, res) => {
     Foster.create(req.body).then(foster => {
-      res.redirect('fosters/index')
+      res.redirect('/fosters')
     })
   },
   show: (req, res) => {
