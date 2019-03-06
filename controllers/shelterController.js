@@ -14,7 +14,7 @@ const shelterController = {
   },
   create: (req, res) => {
     Shelter.create(req.body).then(shelter => {
-      res.redirect('/shelters/index')
+      res.redirect('/shelters')
     })
   },
   show: (req, res) => {

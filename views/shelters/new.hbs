@@ -7,17 +7,18 @@
         <input class="form-control" type="text" name="name" id="name" placeholder="Please enter your shelter's name">
       </div>
       <div class="form-group">
-        <label class="input-text" for="street">Street Address</label>
-        <input class="form-control" type="text" name="street" id="street"
+        <label class="input-text" for="address.street">Street Address</label>
+        <input class="form-control" type="text" name="address.street" id="street"
           placeholder="Please enter your shelter's street address">
       </div>
       <div class="form-group">
-        <label class="input-text" for="gender">City</label>
-        <input class="form-control" type="text" name="city" id="city" placeholder="Please enter your shelter's city">
+        <label class="input-text" for="address.city">City</label>
+        <input class="form-control" type="text" name="address.city" id="city"
+          placeholder="Please enter your shelter's city">
       </div>
       <div class="form-group">
-        <label class="input-text" for="state">State</label>
-        <select class="custom-select" type="text" name="state" id="state">
+        <label class="input-text" for="address.state">State</label>
+        <select class="custom-select" type="text" name="address.state" id="state">
           <option selected>Open this select menu</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
@@ -71,6 +72,11 @@
           <option value="WI">Wisconsin</option>
           <option value="WY">Wyoming</option>
         </select>
+      </div>
+      <div class="form-group">
+        <label class="input-text" for="address.zipCode">Zip Code</label>
+        <input class="form-control" type="text" name="address.zipCode" id="city"
+          placeholder="Please enter your zip code">
       </div>
       <div class="form-group">
         <label class="input-text" for="phoneNumber">Phone Number</label>
