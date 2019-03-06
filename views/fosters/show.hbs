@@ -15,7 +15,7 @@
     <a class="action-btn btn btn-info btn-lg button" href="/fosters/{{foster.id}}/edit">EDIT</a>
   </div>
   <div class="col-xs-6 text-right" style="margin-left: 2vw">
-    <form class="delete-form" action="/{{foster._id}}?_method=DELETE" method="POST">
+    <form class="delete-form" action="/fosters/{{foster.id}}?_method=DELETE" method="POST">
       <input class="action-btn btn btn-danger btn-lg button" type="submit" value="DELETE">
     </form>
   </div>

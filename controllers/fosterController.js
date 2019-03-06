@@ -41,7 +41,7 @@ const fosterController = {
   delete: (req, res) => {
     Foster.findByIdAndDelete(req.params.fosterId).then(() => {
       console.log(`Deleted foster with id of ${req.params.fosterId}`)
-      res.redirect('fosters/index')
+      res.redirect('/fosters')
     })
   },
 }
