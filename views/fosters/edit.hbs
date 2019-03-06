@@ -1,8 +1,7 @@
 <div class="container">
-  <a href="/fosters">Back</a>
   <h2 class="text-center">Edit a Foster</h2>
   <div class="col-8">
-    <form action="/fosters" method="POST">
+    <form action="/fosters/{{foster.id}}?_method=PUT" method="POST">
       <div class="form-group">
         <label class="input-text" for="name">Name</label>
         <input class="form-control" type="text" name="name" id="name" value="{{foster.name}}">

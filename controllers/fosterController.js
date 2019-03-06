@@ -32,10 +32,10 @@ const fosterController = {
     })
   },
   update: (req, res) => {
-    Shop.findByIdAndUpdate(req.params.fosterId, req.body, {
+    Foster.findByIdAndUpdate(req.params.fosterId, req.body, {
       new: true
     }).then(() => {
-      res.redirect(`/${req.params.fosterId}`)
+      res.redirect(`/fosters/${req.params.fosterId}`)
     })
   },
   delete: (req, res) => {
