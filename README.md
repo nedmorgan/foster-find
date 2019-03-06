@@ -2,15 +2,15 @@
 
 With this application you are able to view animals that are currently being fostered and are available for adoption. The user is able to view important information such as, breed, age, adoption fee, and the location of the animal.
 
-[Deployed Heroku Site]()
+[Deployed Heroku Site](https://rocky-sierra-50409.herokuapp.com/)
 
 [Trello](https://trello.com/b/OZiwvSq2/foster-find)
 
 ## Foster Features:
 ___
-* The user is able to register and gain access to the site through a log-in page.
+* The user is able to add their name and view foster information.
 * The user can also delete their account.
-* Once in the application the user is directed to a dashboard that lists the animals available for adoption.
+* Once in the application the user can view a dashboard that lists the animals available for adoption.
 * The user can view an adoptable animals in more detail on an individual page.
 * The user can edit an animal's information and selected adopted if the animal is adopted.
 * The user can view a dashboard of shelters.
@@ -50,9 +50,8 @@ ___
 #### Current Features
 
 * Able to create, read, and delete user
-* Able to create, edit, update, and delete animals
+* Able to create, edit, update, and delete fosters
 * Able to create, read, and delete shelters
-* Able to access the content through a secure log-in
 
 #### Future Improvements:
 

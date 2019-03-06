@@ -8,9 +8,7 @@
     <p class="text-left">Phone Number: {{shelter.phoneNumber}}</p>
     <ul>
       {{#each shelter.animals}}
-      <a href="/{{../fosters}}/{{foster.id}}">
-        {{name}}
-      </a>
+      <li class="foster-list"><a href="/fosters/{{id}}">{{name}}</a></li>
       {{/each}}
     </ul>
   </div>

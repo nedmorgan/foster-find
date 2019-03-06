@@ -70,3 +70,7 @@ a {
   font-family: 'Lato', sans-serif;
   color: whitesmoke;
 }
+
+.foster-list {
+  list-style-type: none;
+}
