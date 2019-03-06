@@ -9,8 +9,6 @@ const shelterController = require('../controllers/shelterController')
 router.get('/', appController.index)
 
 // User routes
-router.get('/users', userController.index)
-
 router.get('/users/new', userController.new)
 
 router.post('/users', userController.create)

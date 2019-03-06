@@ -1,17 +1,14 @@
 const User = require('../models/User')
 
 const userController = {
-  index: (req, res) => {
-    res.send(`User page`)
-  },
   new: (req, res) => {
     res.render('users/new')
   },
   create: (req, res) => {
-    console.log(req.body)
-    User.create(req.body).then(user => {
-      res.redirect(`/users/${user._id}`)
-    })
+    User.remove({})
+      .then(() => User.create(req.body)).then(user => {
+        res.redirect(`/users/${user._id}`)
+      })
   },
   show: (req, res) => {
     User.findById(req.params.userId).then(user => {

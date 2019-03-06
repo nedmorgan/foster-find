@@ -25,11 +25,21 @@ const shelterController = {
   show: (req, res) => {
     Shelter.findById(req.params.shelterId).populate('animals')
       .then(shelter => {
-        console.log(shelter)
-        res.render('shelters/show', {
-          shelter
+        Foster.find().then(fosters => {
+          res.render('shelters/show', {
+            shelter,
+            fosters
+          }).catch(err => {
+            console.log(`Error: ${err}`)
+          })
         })
       })
+    // Shelter.findById(req.params.shelterId).populate('animals')
+    //   .then(shelter => {
+    //     res.render('shelters/show', {
+    //       shelter,
+    //     })
+    //   })
   },
   delete: (req, res) => {
     Shelter.findByIdAndDelete(req.params.shelterId).then(() => {
