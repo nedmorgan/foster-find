@@ -8,7 +8,7 @@
     <p class="text-left">Phone Number: {{shelter.phoneNumber}}</p>
     <ul>
       {{#each shelter.animals}}
-      <a href="/{{../fosters}}/{{foster._id}}">
+      <a href="/{{../fosters}}/{{foster.id}}">
         {{name}}
       </a>
       {{/each}}
@@ -17,7 +17,7 @@
 </div>
 <div class="panel-footer row text-center justify-content-center">
   <div class="col-xs-6 text-center">
-    <form class="delete-form" action="/{{shelter.id}}?_method=DELETE" method="POST">
+    <form class="delete-form" action="/shelters/{{shelter.id}}?_method=DELETE" method="POST">
       <input class="action-btn btn btn-danger btn-lg button" type="submit" value="DELETE">
     </form>
   </div>

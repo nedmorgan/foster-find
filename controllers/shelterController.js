@@ -12,7 +12,7 @@ const shelterController = {
   new: (req, res) => {
     res.render('shelters/new')
   },
-  create: (req, res) => {ß
+  create: (req, res) => {
     Shelter.create(req.body).then(shelter => {
       res.redirect('shelters/index')
     })
@@ -27,7 +27,7 @@ const shelterController = {
   delete: (req, res) => {
     Shelter.findByIdAndDelete(req.params.shelterId).then(() => {
       console.log(`Deleted shelter with id of ${req.params.shelterId}`)
-      res.redirect('shelters/index')
+      res.redirect('/shelters')
     })
   }
 }
