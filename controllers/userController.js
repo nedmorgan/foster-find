@@ -21,7 +21,7 @@ const userController = {
     })
   },
   delete: (req, res) => {
-    User.findByIdAndDelete(req.params.shopId).then(() => {
+    User.findByIdAndDelete(req.params.userId).then(() => {
       console.log(`Deleted user with id of ${req.params.userId}`)
       res.redirect('/')
     })
