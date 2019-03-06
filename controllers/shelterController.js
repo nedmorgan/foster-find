@@ -22,6 +22,9 @@ const shelterController = {
       res.redirect('/shelters')
     })
   },
+  addPet: (req, res) => {
+    res.send('Add Pet')
+  },
   show: (req, res) => {
     Shelter.findById(req.params.shelterId).populate('animals')
       .then(shelter => {
@@ -34,12 +37,6 @@ const shelterController = {
           })
         })
       })
-    // Shelter.findById(req.params.shelterId).populate('animals')
-    //   .then(shelter => {
-    //     res.render('shelters/show', {
-    //       shelter,
-    //     })
-    //   })
   },
   delete: (req, res) => {
     Shelter.findByIdAndDelete(req.params.shelterId).then(() => {

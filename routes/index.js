@@ -9,6 +9,8 @@ const shelterController = require('../controllers/shelterController')
 router.get('/', appController.index)
 
 // User routes
+router.get('/users', userController.index)
+
 router.get('/users/new', userController.new)
 
 router.post('/users', userController.create)
@@ -37,6 +39,8 @@ router.delete('/fosters/:fosterId', fosterController.delete)
 router.get('/shelters', shelterController.index)
 
 router.get('/shelters/new', shelterController.new)
+
+router.post('/shelters/addPet', shelterController.addPet)
 
 router.post('/shelters', shelterController.create)
 

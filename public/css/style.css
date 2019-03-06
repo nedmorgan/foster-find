@@ -20,8 +20,20 @@ body {
   margin-top: 5vw;
 }
 
+.sub-main {
+  color: whitesmoke;
+  font-size: 5vw;
+  font-family: 'Lato',
+    sans-serif;
+  margin-top: 5vw;
+}
+
 .main-icon {
   margin-left: .5vw
+}
+
+.user-text {
+  color: whitesmoke;
 }
 
 .input-text {
@@ -52,7 +64,9 @@ a {
 
 .button {
   width: 30vw;
-  margin-top: 2vw;
+  margin-top: 3vw;
+  font-size: 2vw;
+  margin-bottom: 3vw;
 }
 
 .foster-card {
@@ -71,6 +85,26 @@ a {
   color: whitesmoke;
 }
 
+.foster-drop {
+  width: 40vw;
+  margin: 0 auto;
+}
+
 .foster-list {
   list-style-type: none;
+}
+
+.foster-drop-submit {
+  margin-top: 1vw;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30vw;
+}
+
+.index-icon {
+  font-size: 10vw;
+  color: whitesmoke
 }

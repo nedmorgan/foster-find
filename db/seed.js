@@ -5,7 +5,7 @@ const Shelter = require("../models/Shelter.js")
 
 const ned = new User({
   name: 'Ned',
-  localShelter: 'Fulton County Animal Services',
+  localShelter: 'Fulton County Animal Shelter',
 })
 
 const gizmo = new Foster({

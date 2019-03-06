@@ -14,7 +14,7 @@
   </div>
 </div>
 <form action="/shelters" method="POST">
-  <div class="form-group">
+  <div class="form-group foster-drop">
     <label class="input-text" for="animals">New Foster</label>
     <select class="custom-select" type="text" name="animals" id="animals">
       <option selected>Open this select menu</option>
@@ -23,7 +23,9 @@
       {{/each}}
     </select>
   </div>
-  <input class="btn btn-info" type="submit" value="SUBMIT">
+  <div class="text-center">
+    <input class="btn btn-info foster-drop-submit" type="submit" value="SUBMIT">
+  </div>
 </form>
 <div class="panel-footer row text-center justify-content-center">
   <div class="col-xs-6 text-center">
