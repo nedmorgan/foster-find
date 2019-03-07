@@ -1,4 +1,4 @@
-# Foster Find
+# Foster Finder
 
 With this application you are able to view animals that are currently being fostered and are available for adoption. The user is able to view important information such as, breed, age, adoption fee, and the location of the animal.
 
@@ -8,13 +8,14 @@ With this application you are able to view animals that are currently being fost
 
 ## Foster Features:
 ___
-* The user is able to add their name and view foster information.
+* The user is able to add their name and view their user information.
 * The user can also delete their account.
-* Once in the application the user can view a dashboard that lists the animals available for adoption.
-* The user can view an adoptable animals in more detail on an individual page.
-* The user can edit an animal's information and selected adopted if the animal is adopted.
+* In the application the user can view a dashboard that lists the fosters available for adoption.
+* The user can view adoptable fosters in more detail on an individual page.
+* The user can edit a fosters's information and remove the foster from the index page.
 * The user can view a dashboard of shelters.
-* The user can add a new shelter and delete a shelter from the list
+* The user can add a new shelter and delete a shelter from the list.
+* The user can add a foster to a shelter if not association exists.
 
 ## Wireframe:
 ___
@@ -37,6 +38,9 @@ ___
 ### Individual Shelter Page
 <img src='media/shelter_page.jpg' alt='individual shelter page' height=250 width=200/>
 
+### ERD
+<img src='media/erd.jpg' alt='erd page' height=250 width=200/>
+
 ## Technologies:
 ___
 
@@ -52,12 +56,15 @@ ___
 * Able to create, read, and delete user
 * Able to create, edit, update, and delete fosters
 * Able to create, read, and delete shelters
+* Able to add a foster to a shelter via the specific shelter show page
 
 #### Future Improvements:
 
 * In Version 2 of this application I would like to soft-delete the animals and show them on a separate page that displays adoptions.
 
-* I would like to have the user to add an animal to their favorite and have that animal display on their user page.
+* I would like to have the user to add an animal as their favorite and have that animal display on their user page.
+
+* I would like to create a message box under each animal and have users post inspirational messages.
 
 ## Credits
 
