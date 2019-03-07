@@ -120,7 +120,8 @@ a {
 
 .index-icon {
   font-size: 10vw;
-  color: whitesmoke
+  color: whitesmoke;
+  margin-bottom: 2vw;
 }
 
 .foster-title {
