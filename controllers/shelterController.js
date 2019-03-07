@@ -23,7 +23,13 @@ const shelterController = {
     })
   },
   addPet: (req, res) => {
-    res.send('Add Pet')
+    Shelter.findById(req.params.shelterId).then(shelter => {
+      Foster.findById(req.body).then(foster => {
+        shelter.animals.push(foster)
+        shelter.save()
+        res.redirect('/shelters')
+      })
+    })
   },
   show: (req, res) => {
     Shelter.findById(req.params.shelterId).populate('animals')
