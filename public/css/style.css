@@ -36,6 +36,15 @@ body {
   color: whitesmoke;
 }
 
+.user-image {
+  border-radius: 50%;
+}
+
+.image-flex {
+  display: flex;
+  justify-content: center;
+}
+
 .input-text {
   font-family: 'Lato', sans-serif;
   font-size: 3vw;
@@ -107,4 +116,10 @@ a {
 .index-icon {
   font-size: 10vw;
   color: whitesmoke
+}
+
+.foster-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 2vw;
+  text-decoration: underline;
 }

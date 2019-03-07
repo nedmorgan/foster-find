@@ -6,6 +6,7 @@ const Shelter = require("../models/Shelter.js")
 const ned = new User({
   name: 'Ned',
   localShelter: 'Fulton County Animal Shelter',
+  userImg: 'https://farm8.staticflickr.com/7846/33428826948_cf317b88d9_b.jpg',
 })
 
 const gizmo = new Foster({

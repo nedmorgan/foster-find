@@ -5,6 +5,9 @@
   {{#each users}}
   <div>
     <h1 class="user-text"><a href="/users/{{id}}">{{name}}</a></h1>
+    <div class="image-flex">
+      <img class="user-image" src="{{userImg}}" alt="uder image" height="190" width="235">
+    </div>
     <h2 class="user-text">{{localShelter}}</h2>
   </div>
   {{/each}}

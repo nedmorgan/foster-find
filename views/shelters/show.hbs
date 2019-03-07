@@ -6,6 +6,7 @@
     <p class="card-text">State: {{shelter.address.state}}</p>
     <p class="card-text">Zip: {{shelter.address.zipCode}}</p>
     <p class="text-left">Phone Number: {{shelter.phoneNumber}}</p>
+    <h5 class="text-left foster-title">Current Fosters:</h5>
     <ul>
       {{#each shelter.animals}}
       <li class="foster-list"><a href="/fosters/{{id}}">{{name}}</a></li>
