@@ -51,7 +51,7 @@ const fultonShelter = new Shelter({
     zipCode: '30318'
   },
   phoneNumber: '404-613-0358',
-  animals: [betsy, gizmo, carl]
+  animals: [betsy, carl]
 })
 
 const walter = new Foster({
@@ -96,7 +96,7 @@ const atlantaHumane = new Shelter({
     zipCode: '30318'
   },
   phoneNumber: '404-875-5331',
-  animals: [walter, karen, alice]
+  animals: [walter, alice]
 })
 
 Shelter.remove({})

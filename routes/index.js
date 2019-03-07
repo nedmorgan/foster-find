@@ -40,7 +40,7 @@ router.get('/shelters', shelterController.index)
 
 router.get('/shelters/new', shelterController.new)
 
-router.post('/shelters/addPet', shelterController.addPet)
+router.post('/shelters/:shelterId', shelterController.addPet)
 
 router.post('/shelters', shelterController.create)
 

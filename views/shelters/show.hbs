@@ -7,18 +7,19 @@
     <p class="card-text">Zip: {{shelter.address.zipCode}}</p>
     <p class="text-left">Phone Number: {{shelter.phoneNumber}}</p>
     <h5 class="text-left foster-title">Current Fosters:</h5>
-    <ul>
+    <ul class="foster-list">
       {{#each shelter.animals}}
-      <li class="foster-list"><a href="/fosters/{{id}}">{{name}}</a></li>
+      <li class="foster-list-item"><a href="/fosters/{{id}}">{{name}}</a></li>
       {{/each}}
     </ul>
   </div>
 </div>
-<form action="/shelters/addPet" method="POST">
+
+<form action="/shelters/{{shelter._id}}" method="POST">
   <div class="form-group foster-drop">
     <label class="input-text" for="animals">New Foster</label>
-    <select class="custom-select" type="text" name="animals" id="animals">
-      <option selected>Open this select menu</option>
+    <select id="addPetId" class="custom-select" type="text" name="animals" id="animals">
+      <option>Open this select menu</option>
       {{#each fosters}}
       <option value="{{id}}">{{name}}</option>
       {{/each}}
