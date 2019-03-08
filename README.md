@@ -7,7 +7,7 @@ With this application you are able to view animals that are currently being fost
 [Trello](https://trello.com/b/OZiwvSq2/foster-find)
 
 ## Foster Features:
-___
+
 * The user is able to add their name and view their user information.
 * The user can also delete their account.
 * In the application the user can view a dashboard that lists the fosters available for adoption.
@@ -15,10 +15,9 @@ ___
 * The user can edit a fosters's information and remove the foster from the index page.
 * The user can view a dashboard of shelters.
 * The user can add a new shelter and delete a shelter from the list.
-* The user can add a foster to a shelter if not association exists.
+* The user can add a foster to a shelter if no association exists.
 
 ## Wireframe:
-___
 
 ### Landing Page
 <img src='media/landing_page.jpg' alt='landing page' height=250 width=200/>
@@ -42,14 +41,12 @@ ___
 <img src='media/erd.jpg' alt='erd page' height=250 width=200/>
 
 ## Technologies:
-___
 
 * Languages - Javascript, HTML, and CSS
 * Design - Google Fonts and Boostrap
 * Visual Studio Code
 
 ## Features and Future Improvements:
-___
 
 #### Current Features
 
@@ -57,6 +54,8 @@ ___
 * Able to create, edit, update, and delete fosters
 * Able to create, read, and delete shelters
 * Able to add a foster to a shelter via the specific shelter show page
+
+___
 
 #### Future Improvements:
 
