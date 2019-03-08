@@ -10,6 +10,10 @@ const Foster = new Schema({
   adoptionFee: String,
   petImg: String,
   description: String,
+  comments: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Comment'
+  }]
 })
 
 module.exports = mongoose.model("Foster", Foster);

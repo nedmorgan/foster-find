@@ -48,4 +48,12 @@ router.get('/shelters/:shelterId', shelterController.show)
 
 router.delete('/shelters/:shelterId', shelterController.delete)
 
+// Comment routes
+
+router.get('/fosters/:fosterId/comments/new', shelterController.new)
+
+router.post('/fosters/:fosterId/comments', shelterController.create)
+
+router.delete('/fosters/:fosterId/comments/:commentId', shelterController.delete)
+
 module.exports = router
