@@ -75,7 +75,7 @@ a {
 .button {
   width: 30vw;
   margin-top: 1.5vw;
-  font-size: 2vw;
+  font-size: 3vw;
   margin-bottom: 3vw;
 }
 
@@ -128,4 +128,11 @@ a {
   font-family: 'Lato', sans-serif;
   font-size: 2vw;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .flex {
+    margin-top: 90vw;
+  }
 }
