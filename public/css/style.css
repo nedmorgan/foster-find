@@ -73,7 +73,6 @@ a {
 }
 
 .button {
-  width: 30vw;
   margin-top: 1.5vw;
   font-size: 3vw;
   margin-bottom: 3vw;
@@ -98,6 +97,13 @@ a {
 .foster-drop {
   width: 40vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-select {
+  width: 70vw;
 }
 
 .foster-list {
@@ -109,7 +115,7 @@ a {
 }
 
 .foster-drop-submit {
-  margin-top: 1vw;
+  margin-top: 2vw;
 }
 
 .flex {
@@ -128,6 +134,15 @@ a {
   font-family: 'Lato', sans-serif;
   font-size: 2vw;
   text-decoration: underline;
+}
+
+.delete-form {
+  margin-bottom: 0;
+}
+
+.footer-area {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
