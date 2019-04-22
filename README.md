@@ -20,22 +20,25 @@ With this application you are able to view animals that are currently being fost
 ## Wireframe:
 
 ### Landing Page
-<img src='media/landing_page.jpg' alt='landing page' height=250 width=200/>
+<img src='media/foster_homepage.png' alt='landing page' height=250 width=325/>
 
 ### User Page
-<img src='media/user_page.jpg' alt='user page' height=250 width=200/>
+<img src='media/foster_userpage.png' alt='user page' height=250 width=325/>
+
+### User Form Page
+<img src='media/foster_userform.png' alt='user page' height=250 width=325/>
 
 ### Foster Page Dashboard
-<img src='media/foster_dashboard.jpg' alt='foster page dashboard' height=250 width=200/>
+<img src='media/fosters_page.png' alt='foster page dashboard' height=250 width=325/>
 
 ### Individual Foster Page
-<img src='media/individual_foster_page.jpg' alt='individual foster page' height=250 width=200/>
+<img src='media/foster_page.png' alt='individual foster page' height=250 width=325/>
 
 ### Shelter Page Dashboard
-<img src='media/shelter_dashboard.jpg' alt='shelter page dashboard' height=250 width=200/>
+<img src='media/foster_shelters.png' alt='shelter page dashboard' height=250 width=325/>
 
 ### Individual Shelter Page
-<img src='media/shelter_page.jpg' alt='individual shelter page' height=250 width=200/>
+<img src='media/shelter_page.png' alt='individual shelter page' height=250 width=325/>
 
 ### ERD
 <img src='media/erd.jpg' alt='erd page' height=250 width=200/>
