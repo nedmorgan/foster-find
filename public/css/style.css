@@ -23,13 +23,12 @@ body {
 .sub-main {
   color: whitesmoke;
   font-size: 5vw;
-  font-family: 'Lato',
-    sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-top: 5vw;
 }
 
 .main-icon {
-  margin-left: .5vw
+  margin-left: 0.5vw;
 }
 
 .user-text {
@@ -76,6 +75,12 @@ a {
   margin-top: 1.5vw;
   font-size: 3vw;
   margin-bottom: 3vw;
+}
+
+#add-foster,
+#add-shelter,
+#add-user {
+  font-size: 1.5em;
 }
 
 .foster-card {
@@ -146,7 +151,6 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-
   .flex {
     margin-top: 90vw;
   }

@@ -1,7 +1,7 @@
 {{#each fosters}}
 <div class="container">
   <div class="row foster-card">
-    <div class="card col-sm-6 col-lg-6" style="width: 50%;">
+    <div class="card col-sm-6 col-lg-6" style="width: 75%;">
       <img src="{{petImg}}" class="card-img-top" alt="foster animal">
       <div class="card-body">
         <h5 class="card-title">{{name}}</h5>
@@ -20,6 +20,6 @@
 {{/each}}
 <div class="panel-footer row text-center justify-content-center">
   <div class="col-xs-6 text-center">
-    <a href="/fosters/new" class="action-btn btn btn-primary butn-leg button">Add a new foster</a>
+    <a href="/fosters/new" id="add-foster" class="action-btn btn btn-primary butn-leg button">Add a new foster</a>
   </div>
 </div>
